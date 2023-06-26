@@ -4,39 +4,39 @@
   <table>
     <tr>
       <th>タイトル</th>
-      <td><%= @user.title %></td>
+      <td><%= @todo.title %></td>
     </tr>
 
     <tr>
       <th>開始日</th>
-      <td><%= @user.start_date %></td>
+      <td><%= @todo.start_date %></td>
     </tr>
 
     <tr>
       <th>終了日</th>
-      <td><%= @user.end_date %></td>
+      <td><%= @todo.end_date %></td>
     </tr>
     
     <tr>
         <th>終日</th>
         <th>
-        <% if @user.allday == "true" %>
+        <% if @todo.allday == "true" %>
         ○
-        <% else @user.allday == "false" %>
+        <% else @todo.allday == "false" %>
         
         <% end %>
         </th>
     </tr>
-<!--終日のチェックボックス-->
+
     <tr>
       <th>スケジュールメモ</th>
-      <td><%= @user.memo %></td>
+      <td><%= @todo.memo %></td>
     </tr>
   </table>
 
   <div>
     <ul>
-      <li><%= link_to "予定一覧に戻る", :users %></li>
+      <li><%= link_to "予定一覧に戻る", :todos %></li>
     </ul>
   </div>
  

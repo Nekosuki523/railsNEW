@@ -9,15 +9,16 @@
 # migrations use external dependencies or application code.
 #
 # It's strongly recommended that you check this file into your version control system.
- 
-ActiveRecord::Schema.define(version: 2023_06_17_153240) do
 
-  create_table "users", force: :cascade do |t|
+ActiveRecord::Schema.define(version: 2023_06_26_065637) do
+
+  create_table "todos", force: :cascade do |t|
     t.string "title"
-    t.string "allday"
-    t.string "memo"
     t.date "start_date"
     t.date "end_date"
+    t.string "allday"
+    t.boolean "checkbox"
+    t.string "memo"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

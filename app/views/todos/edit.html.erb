@@ -1,6 +1,6 @@
 <h3>予定の新規追加</h3>
 
-<%= form_with model: @user do |f| %>
+<%= form_with model: @todo do |f| %>
   <table>
     <tr>
       <th><%= f.label :title ,"タイトル" %></th>
@@ -31,7 +31,7 @@
   <div>
     <ul>
       <li><%= f.submit "編集を完了する"%></li>
-      <li><%= link_to "予定一覧に戻る", :users %></li>
+      <li><%= link_to "予定一覧に戻る", :todos %></li>
     </ul>
   </div>
 <% end %> 

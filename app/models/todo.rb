@@ -1,5 +1,5 @@
 class Todo < ApplicationRecord
-      validates :title, presence: true, length: { maximum: 20}
+   validates :title, presence: true, length: { maximum: 20}
    validates :start_date, presence: true
    validates :end_date, presence: true
    validates :memo, length: { maximum: 500 }
@@ -8,7 +8,7 @@ class Todo < ApplicationRecord
    
    def start_end_check
       errors.add(:end_date, "は開始日より前の日付は登録できません。") unless
-      self.start_date < self.end_date
+      self.start_date <= self.end_date
    end 
    
 end

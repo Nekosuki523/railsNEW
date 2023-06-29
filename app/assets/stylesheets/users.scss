@@ -1,0 +1,48 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+ table th {
+   background-color: #fbc25b;
+   padding: 10px 20px;
+ }
+ 
+ table td {
+   background-color: #f9ecd5;
+   padding: 10px 20px;
+ }
+ 
+ .mybutton {
+  border: none;
+  background-color: #f9ecd5;
+ }
+
+
+ .notice {
+   background-color: #ccf;
+   padding: 5px;
+ }
+ 
+  
+ 
+ button {
+  background-color: #f9ecd5;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: 700;
+  height: 45px;
+  line-height: 18px;
+  padding : 12px 20px;
+ }
+ 
+ p {
+  background-color: #fbc25b;
+  padding: 10px 20px;
+ }
+ 
+ span {
+  font-size : 20px;
+  font-weight : bold;
+  
+ }
